@@ -1,0 +1,47 @@
+html, body {
+    width: 100%; 
+    height: 100%;
+    color: #fff;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .parent {
+    width: 80%; 
+    height: 300px;
+    padding: 30px;
+    overflow-x: scroll;             /*must have*/
+    background: #f5f5f5;
+    white-space: nowrap;            /*must have*/
+    /* border: 2px solid black; */
+    border-radius: 14px;
+    background: #e3e3e3;
+    box-shadow:  20px 20px 60px #c1c1c1,
+                -20px -20px 60px #ffffff;
+  }
+  
+  .child {
+    width: 200px; height: 100%;
+    margin-right: 30px;
+    padding: 25px;
+    background: #3b3b3b;
+    box-sizing: border-box;         /*must have*/
+    display:inline-block;           /*must have*/
+  }
+
+  /* scrollbar styles */
+  .parent::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  .parent::-webkit-scrollbar-track {
+    background: lightgrey;        /* color of the tracking area */
+  }
+  
+  .parent::-webkit-scrollbar-thumb {
+    background-color: coral;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid lightgray;  /* creates padding around scroll thumb */
+  }
